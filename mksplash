@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+fbv -c -i -s 1 "$1"
+dd if=/dev/fb0 of=/etc/splash.fb

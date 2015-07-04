@@ -1,0 +1,11 @@
+#!/bin/sh
+
+SPLASH=/etc/splash.fb
+SIZE=$(stat -c %s "$SPLASH")
+
+while true
+do
+	[ -c /dev/console ] && echo -ne '\e[?25l\e[?1c' >/dev/console  # TERM=linux tput civis
+	[ -c /dev/fb0 ] && dd if="$SPLASH" of=/dev/fb0 bs="$SIZE" count=1 >/dev/null 2>&1
+	sleep 0.05
+done

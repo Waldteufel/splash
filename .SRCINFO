@@ -1,0 +1,22 @@
+pkgbase = splash
+	pkgdesc = Boot splash scripts
+	pkgver = 0.1
+	pkgrel = 1
+	url = http://www.archlinux.org
+	arch = i686
+	arch = x86_64
+	license = custom:ISC
+	optdepends = fbv: to fill the framebuffer and dump it using mksplash
+	source = COPYING
+	source = splash
+	source = mksplash
+	source = splash.service
+	source = sd-splash.hook-install
+	md5sums = 741d1fd57493ada92df663d0cf150817
+	md5sums = e3877caecfe5a0ef1d9a61c0ef2c0088
+	md5sums = f85f85e9f8bcda664f0918674385149d
+	md5sums = 0a2a17b9116578b3094839e420f9b058
+	md5sums = 5d6c3b08e0c2c9f14302f46a0ac26c62
+
+pkgname = splash
+

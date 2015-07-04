@@ -1,0 +1,6 @@
+[Unit]
+ConditionKernelCommandLine=splash
+ConditionFileNotEmpty=/etc/splash.fb
+
+[Service]
+ExecStart=/usr/lib/splash/splash
